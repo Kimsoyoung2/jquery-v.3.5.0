@@ -1,0 +1,51 @@
+@charset "utf-8";
+    body {
+        font:16px/1.5 "Noto Sans KR";
+        color:#333;
+    }
+    a,a:link {
+        text-decoration: none;
+        color:inherit;
+    }
+    ul {
+        list-style:none;
+    }
+    #side {
+        transition: all 0.3s;
+        width: 300px;
+        height: 100%;
+        position: fixed;
+        top:0;
+        left:-290px;
+        background: indianred;
+        z-index: 9999;
+        color:#f2f2f2;
+        box-shadow: 3px 0 7px 0 rgb(0,0,0,.3);
+    }
+    .open {
+        left:0 !important;
+    }
+    .onoff_btn {
+        position: absolute;
+        right:0;
+        width:50px;
+        height: 50px;
+        border-radius: 50%;
+        box-sizing: border-box;
+        background: indianred;
+        top:50%;
+        transform: translate(50%,-50%);
+        text-align: right;
+        padding:0 10px 0 0;
+        line-height: 50px;
+        font-size:2em;
+    }
+    .logo {
+        margin:5% 2%;
+        height:100px;
+        background:darkred;
+    }
+    #gnb li {
+        padding:15px 0;
+        border-bottom:1px solid #f9f9f9;
+    }
