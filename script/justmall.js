@@ -1,7 +1,29 @@
 $(function(){
     tabs(); //tabs 기능 호출(=실행)
     popup(); //popup 기능 호출
+    gnb(); // gnb 기능 호출
 });
+function gnb(){
+        $("#gnb > li").hover(
+        function(){
+            $(this).addClass("on");
+            $(".lnb").show();
+        },
+        function(){
+            $(this).removeClass("on");
+            $(".lnb").hide();
+        }
+    );
+    // $("#gnb > li").mouseover(function(){
+        //     $(this).addClass("on");
+        //     $(".lnb").show();
+        // });
+        
+        // $("#gnb > li").mouseout(function(){
+            //     $(this).removeClass("on");
+            //     $(".lnb").hide();
+            // })
+}
 function tabs(){ // tabs 기능 정의
     notice_on();
     gallery_on();
